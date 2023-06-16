@@ -15,7 +15,7 @@
         <div class="item first">
 
             <h1>
-                About Us
+                About Use
             </h1>
             <p>
                 Content Will be added soon

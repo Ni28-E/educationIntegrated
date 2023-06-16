@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="col py-3">
-        <h3>Edit bars</h3>
+        <h3>Edit blogs</h3>
         <table class="table">
             <thead>
             <tr>
