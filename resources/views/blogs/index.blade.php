@@ -32,11 +32,11 @@
                         <h3>Popular Post</h3>
                         <br>
                         <h2>Title</h2>
-                        <img src="image/update.jpeg"width="300" height="200">
+                        <img src="images/motivate.jpg"width="300" height="200">
                         <h2>Title</h2>
-                        <img src="image/update.jpeg"width="300" height="200">
+                        <img src="images/motivate.jpg"width="300" height="200">
                         <h2>Title</h2>
-                        <img src="image/update.jpeg"width="300" height="200">
+                        <img src="images/motivate.jpg"width="300" height="200">
 
 
                     </div>

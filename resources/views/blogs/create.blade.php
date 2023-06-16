@@ -22,7 +22,8 @@
                             </div>
                             <div class="mb-3">
                                 <label for="blog_content" class="form-label">Blog content</label>
-                                <input required type="text" class="form-control" id="blog_content" name="blog_content"  >
+                                <!--<input required type="text" class="form-control" id="blog_content" name="blog_content"  >-->
+                                <textarea rows="4" cols="50" name="blog_content" id="blog_content">Enter text here...</textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>

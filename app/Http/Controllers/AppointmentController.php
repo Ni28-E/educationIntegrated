@@ -90,6 +90,7 @@ class AppointmentController extends Controller
         //     'appointments' => Appointment::all()
         // ]);
     }
+    //this creates an appointment
     public function create()
     {
         $coaches = Coach::all();

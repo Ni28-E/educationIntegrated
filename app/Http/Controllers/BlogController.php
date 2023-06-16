@@ -30,7 +30,7 @@ class BlogController
         $blog->content = $request->blog_content;
 
         $blog->save();
-        return redirect('/');
+        return redirect('/blogs/create');
     }
 
     public function edit(Blog $blog)

@@ -15,12 +15,12 @@
         <div class="item first">
 
             <h1>
-                About Use
+                About
             </h1>
             <p>
                 Content Will be added soon
             </p>
-            <button>read more</button>
+            <button><a href="{{ route ('about') }}">read more</a></button>
         </div>
 
 
@@ -31,7 +31,7 @@
             <p>
                 blog Info Will be added soon
             </p>
-            <button>read more</button>
+            <button><a href="{{ route ('blog') }}">read more</a></button>
         </div>
 
 
@@ -42,7 +42,7 @@
             <p>
                 Content Will be added soon
             </p>
-            <button>read more</button>
+            <button><a href="{{ route ('home') }}">read more</a></button>
         </div>
     </div>
 </div>
