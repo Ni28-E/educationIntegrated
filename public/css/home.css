@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+*{
+   margin:0 ;
+   padding:0;
+}
+
+
+nav{
+   background-image: linear-gradient(#51A7D8,#739fb9);
+   height: 80px;
+   width: 100%;
+}
+
+
+nav ul li{
+    display: inline-block;
+    margin: 0;
+}
+
+
+nav ul li:hover {
+    background-color: rgb(122, 120, 120);
+}
+
+
+li {
+    float: right;
+  }
+
+
+li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+ }
+
+label.logo {
+    color: white;
+}
+
+
+body {
+   background-color: white;
+   margin: auto;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-image: linear-gradient(#51A7D8,#739fb9);
+    color: white;
+    text-align: center;
+}
+
+.items{
+    min-height:60vh;
+    display : flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.item{
+    background-color: var(--dark-cyan);
+    min-height: 25rem;
+    max-width: 17rem;
+    padding : 2.5rem;
+    position: relative;
+}
+.item .image{
+    margin-bottom : 1.5rem;
+}
+.item h1{
+    color: hsl(0, 0%, 95%);
+    font-size:2.3rem;
+    font-family: 'Big Shoulders Display', cursive;
+}
+.item p{
+    color : hsla(0, 0%, 100%, 0.75);
+    margin-top : 1.5rem;
+    margin-bottom: 6rem;
+}
+
+.item button{
+    position: absolute;
+    bottom: 0;
+    background : hsl(0, 0%, 95%);
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 2px solid hsl(0, 0%, 95%);
+    padding:12px 18px;
+    border-radius:30px;
+    color :hsl(184, 100%, 22%);
+    text-transform: capitalize;
+}
+.first{
+    background-color:rgb(82, 78, 78);
+    border-radius:30px;
+}
+.second{
+    background-color: black;
+    border-radius:30px;
+}
+   
+.third{
+    background-color:rgb(82, 78, 78);
+    border-radius: 30px;
+}
+.first button{
+    color:hsl(184, 100%, 22%);
+}
+.second button {
+    color:hsl(184, 100%, 22%);
+}
+.third button{
+    color:hsl(184, 100%, 22%);
+}
+
+button:hover{
+    background-color:transparent;
+    color:hsl(0, 0%, 95%);
+}
