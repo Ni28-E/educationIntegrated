@@ -91,6 +91,27 @@ Route::middleware([
     // Users\PermissionController
     Route::get('/users/permissions', [PermissionController::class, 'index'])->name('users.permission.index');
 
+    //Blog CRUD
+    //Blog this is where all the blogs are displayed with edit and delete buttons behind it
+    Route::get('/blogs/show', [App\Http\Controllers\BlogController::class, 'show'])
+        ->name('blogs.show');
+    //Blog this is where we make the blogs
+    Route::get('/blogs/create', [App\Http\Controllers\BlogController::class, 'create'])
+        ->name('blogs.create');
+
+    Route::post('/blogs/store', [App\Http\Controllers\BlogController::class, 'store'])
+        ->name('blogs.store');
+    //Blog this is where we edit the blogs
+    Route::get('/blogs/edit/{blog}', [App\Http\Controllers\BlogController::class, 'edit'])
+        ->name('blogs.edit');
+
+    Route::patch('/blogs/update/{id}', [App\Http\Controllers\BlogController::class, 'update'])
+        ->name('blogs.update');
+    //Blog this is where all the blogs are destroyed
+    Route::delete('/blogs/destroy/{blog}', [App\Http\Controllers\BlogController::class, 'destroy'])
+        ->name('blogs.destroy');
+
+});
 //visitors website
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])
         ->name('home');
@@ -117,23 +138,4 @@ Route::middleware([
     Route::post('/store', [App\Http\Controllers\MailController::class, 'store'])
         ->name('store');
 
-    //Blog CRUD
-    //Blog this is where all the blogs are displayed with edit and delete buttons behind it
-    Route::get('/blogs/show', [App\Http\Controllers\BlogController::class, 'show'])
-        ->name('blogs.show');
-    //Blog this is where we make the blogs
-    Route::get('/blogs/create', [App\Http\Controllers\BlogController::class, 'create'])
-        ->name('blogs.create');
 
-    Route::post('/blogs/store', [App\Http\Controllers\BlogController::class, 'store'])
-        ->name('blogs.store');
-    //Blog this is where we edit the blogs
-    Route::get('/blogs/edit/{blog}', [App\Http\Controllers\BlogController::class, 'edit'])
-        ->name('blogs.edit');
-
-    Route::patch('/blogs/update/{id}', [App\Http\Controllers\BlogController::class, 'update'])
-        ->name('blogs.update');
-    //Blog this is where all the blogs are destroyed
-    Route::delete('/blogs/destroy/{blog}', [App\Http\Controllers\BlogController::class, 'destroy'])
-        ->name('blogs.destroy');
-});
