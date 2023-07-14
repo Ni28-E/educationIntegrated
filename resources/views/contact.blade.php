@@ -1,8 +1,6 @@
 @extends('layouts.visitorApp')
 
 @section('content')
-
-
 <br>
                 <form action="{{ route('store') }}" method="post" id="email">
                 @csrf
@@ -14,7 +12,6 @@
                 <button type="submit">Send</button>
                 </form>
                 <textarea rows="4" cols="50" name="information" form="email" id="information">Enter text here...</textarea>
-
 
 
 
